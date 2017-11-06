@@ -51,11 +51,10 @@ public class MainConverter {
 
         String actualText = extractionStrategy.getResultantText();
         List<String> myList = new ArrayList<String>(Arrays.asList(actualText.split("\n")));
-        System.out.println("Text: " + actualText);
+        System.out.println("Text: " + myList);
 
         pdfDoc.close();
 
-        //Assert.assertEquals(EXPECTED_TEXT, actualText);
     }
 
     class FontFilter extends TextRegionEventFilter {
